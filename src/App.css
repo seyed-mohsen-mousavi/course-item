@@ -23,7 +23,9 @@ h1 {
   color: #64748b;
   font-weight: 300;
 }
-
+.course-status div {
+  cursor: pointer;
+}
 .course-status .active {
   font-weight: 700;
   color: #334155;
@@ -69,8 +71,16 @@ h1 {
 
 .course-item__body .rate {
   white-space: nowrap;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
-
+.course-item__body .rate svg {
+  width: 15px;
+  margin: 5px;
+  fill: #ffff00;
+  filter: drop-shadow(1px 1px 1px black);
+}
 .course-item__img img {
   width: 15rem;
   height: auto;
