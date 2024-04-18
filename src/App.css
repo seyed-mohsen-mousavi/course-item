@@ -57,6 +57,10 @@ h1 {
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
+.course-item__body .title a {
+  text-decoration: none;
+  color: black;
+}
 
 .course-item__body .desc {
   font-size: 0.9rem;

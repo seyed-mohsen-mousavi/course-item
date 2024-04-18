@@ -38,9 +38,9 @@ const courses = [
 function CourseList() {
   return (
     <div className="course-list">
-      {courses.map((course) => {
-        return <CourseCard key={course.id} />;
-      })}
+      {courses.map((data) => (
+        <CourseCard key={data.id} course={data} />
+      ))}
     </div>
   );
 }
