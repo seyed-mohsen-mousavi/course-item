@@ -9,8 +9,15 @@ h1 {
   font-weight: 700;
   font-size: 3rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 15px;
 }
-
+h1 svg {
+  width: 45px;
+}
 .container {
   max-width: 50rem;
   margin: 0 auto;
@@ -37,8 +44,20 @@ h1 {
   background-color: #fff;
   margin-bottom: 2rem;
   display: flex;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 5%), 0 8px 10px -6px rgb(0 0 0 / 0%);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: 0 0 0px #0000, var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: all ease-in-out .3s;
 }
-
+.course-item:hover {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.192),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .course-item__detail {
   flex: 1;
   justify-self: start;
@@ -86,6 +105,7 @@ h1 {
   height: auto;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .course-item__footer .tags {
